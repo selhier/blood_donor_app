@@ -1,0 +1,42 @@
+name: blood_donor_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Mejor usar un rango de versiones más actual
+
+# --- Dependencias ---
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Cuidado con la indentación aquí. Todas las dependencias deben estar alineadas.
+  cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.1.0
+  table_calendar: ^3.0.0
+  google_maps_flutter: ^2.5.0 
+# --- Dependencias de desarrollo ---
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# --- Configuración de Flutter ---
+flutter:
+  # 'uses-material-design' solo debe aparecer una vez y sin indentación extra
+  uses-material-design: true
+
+  # Configuración de fuentes
+  assets:  # ¡Agrega esta línea!
+    - assets/fonts/
+  # Cuidado con la indentación de la lista de fuentes (el guion y 'family')
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+
+  # Si no necesitas las líneas comentadas, es mejor borrarlas para que el archivo sea más limpio.
