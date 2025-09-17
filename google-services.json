@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "819923338354",
+    "project_id": "blood-donor-b4eb9",
+    "storage_bucket": "blood-donor-b4eb9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819923338354:android:349600be321abc57b7eeeb",
+        "android_client_info": {
+          "package_name": "haryko.blood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiAU33e7_FVk0cb-mIc8JSNhE5p5MFP4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819923338354:android:55c43aa746947f6cb7eeeb",
+        "android_client_info": {
+          "package_name": "haryko_blood.donor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiAU33e7_FVk0cb-mIc8JSNhE5p5MFP4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

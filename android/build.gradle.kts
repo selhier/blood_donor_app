@@ -22,3 +22,10 @@ subprojects {
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
+// android/app/build.gradle.kts
+
+plugins {
+    id("com.android.application")
+    id("com.google.gms.google-services") // Sin versión aquí
+    id("dev.flutter.flutter-gradle-plugin")
+}

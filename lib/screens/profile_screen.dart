@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart'; // Importa este paquete
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
+
+  // Método para cerrar sesión
+  Future<void> _signOut() async {
+    await FirebaseAuth.instance.signOut();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -52,9 +58,8 @@ class ProfileScreen extends StatelessWidget {
             ),
             const Spacer(),
             ElevatedButton.icon(
-              onPressed: () {
-                // Lógica de cerrar sesión
-              },
+              // Llama a la función de cerrar sesión
+              onPressed: _signOut,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
                 padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 12),
